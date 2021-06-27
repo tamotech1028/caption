@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  height: 100px;
+  color: #1d1d1d;
+  background-color: #ffffff; }
+  header .inner {
+    height: 100%;
+    margin: 0px 20px;
+    border-bottom: solid 1px #383838;
+    display: flex;
+    align-items: center; }
+    header .inner h1 {
+      font-size: 20px;
+      margin-left: 40px; }
+
+#container {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  #container #image {
+    grid-column: 2 / -2;
+    text-align: center; }
+    #container #image h2 {
+      font-size: 20px;
+      color: gray;
+      margin-bottom: 30px; }
+    #container #image .inner {
+      display: inline-block; }
+      #container #image .inner p {
+        width: 400px;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        margin-bottom: 50px; }
+        #container #image .inner p img {
+          width: 100%;
+          height: auto;
+          vertical-align: bottom; }
+        #container #image .inner p strong {
+          position: absolute;
+          display: block;
+          z-index: 1;
+          bottom: 0;
+          width: 400px;
+          height: 50px;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: #ffffff;
+          text-align: left;
+          padding: 10px;
+          box-sizing: border-box; }
+        #container #image .inner p span {
+          position: absolute;
+          display: block;
+          z-index: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          box-shadow: 0px 0px 20px 5px #000 inset;
+          opacity: 0; }
+      #container #image .inner p:nth-child(1) strong {
+        opacity: 0; }
+      #container #image .inner p:nth-child(2) strong {
+        opacity: 0;
+        left: -200%; }
+      #container #image .inner p:nth-child(3) strong {
+        opacity: 0;
+        bottom: -80px; }
+
+footer {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  background-color: #383838;
+  text-align: center; }
